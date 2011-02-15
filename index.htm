@@ -1,23 +1,108 @@
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Form</title>
-    <script src="jquery.js"></script>
-    <script src="form.js"></script>
-  </head>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><!--Not sure if this has to be changed-->
+	<head>
+		<meta charset=UTF-8" />
+		<title>Horizontal Timeline for Bloggers</title>
+		<script src="http://code.jquery.com/jquery-1.5.js"></script>
+		<link rel="stylesheet" href="css/P1.css">
+	</head>
 
-  <body>
-    <form>
-      <p id="msg"></p>
-      <label for="email">Email address</label>
-      <input id="email" name="email" type="email" />
-      <label for="password">Password</label>
-      <input id="password" name="password" type="password" />
-      <input id="submit" value="Login" type="submit"/>
+<body>
+<div id="stage">
+<ul id="myList">
+    <li id="l">
+		<div class="day">31 <span class="day-text">Monday</span></div>
+		<div class="month">January</div>
+		<div class="year">2011</div>
 
-    </form>
-    
-  </body>
+		<p>Blog Entry: Mind Control</p>
+
+		<p>Recap of January 28th Post</p>
+		<script>
+    $("p").click(function () { 
+      $(this).slideRight(); 
+    });
+		</script>
+
+	</li>
+    <li id="2">
+		<div class="day">7 <span class="day-text">Monday</span></div>
+		<div class="month">February</div>
+
+		<div class="year">2011</div>
+		<p>Blog Entry: Egypt is in Africa</p>
+		<script>
+    $("p").click(function () { 
+      $(this).slideRight(); 
+    });
+		</script>
+	</li>
+    <li id="3">
+		<div class="day">9 <span class="day-text">Wednesday</span></div>
+
+		<div class="month">February</div>
+
+		<div class="year">2011</div>
+		<p>Blog Entry: FB=BS</p>
+		<p>Recap of February 7th Post</p>
+		<script>
+    $("p").click(function () { 
+      $(this).slideRight(); 
+    });
+		</script>
+	</li>
+
+    <li id="4">
+		<div class="day">10 <span class="day-text">Thursday</span></div>
+		<div class="month">February</div>
+		<div class="year">2011</div>
+		
+		<p>Blog Entry: Trash Talkin - The Superbowl</p>
+		<p>Recap of February 9th Post</p>
+
+		<script>
+    $("p").click(function () { 
+      $(this).slideRight(); 
+    });
+		</script>
+	</li>
+	<li id="5">
+		<div class="day">11 <span class="day-text">Friday</span></div>
+		<div class="month">February</div>
+
+		<div class="year">2011</div>
+
+		<p>Accepting any topics of discussion from my readers</p>
+		</li>
+    <li id="6">
+		<div class="day">12 <span class="day-text">Saturday</span></div>
+		<div class="month">February</div>
+
+		<div class="year">2011</div>
+
+		<p>Blog Entry: Blizzard 2011</p>
+		<p>Recap of February 10th post</p>
+	</li>
+    <li id="7">
+		<div class="day">7 <span class="day-text">Sunday</span></div>
+		<div class="month">February</div>
+
+		<div class="year">2011</div>
+	</li>
+	<li id="8">
+		<div class="day">8 <span class="day-text">Monday</span></div>
+		<div class="month">February</div>
+		<div class="year">2011</div>
+
+	</li>
+</ul>
+</div>
+<div id="slider-buttons">
+<a href="#"><img id="previous" border="0" src="http://www.carmenleahmcdonald.com/webapps/images/Previous.jpg" alt="Previous" /></a>
+<a href="#"><img id="next" border="0" src="http://www.carmenleahmcdonald.com/webapps/images/Next.jpg" alt="Next" /></a>
+</div>
+</body>
+</html>
+
 </html>
 
